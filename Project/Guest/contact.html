@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 8px;
+        }
+
+        table input[type="text"],
+        table textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table textarea {
+            resize: vertical;
+        }
+
+        table input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        table input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div id="form-container">
+    <h3>Contact</h3>
+    <form id="form1" name="form1" method="post" action="">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="txt_name" id="txt_name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" name="txt_email" id="txt_email" />
+                </td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td>
+                    <input type="text" name="txt_subject" id="txt_subject" />
+                </td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td>
+                    <textarea name="txt_message" id="txt_message" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btnsub" id="btnsub" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
